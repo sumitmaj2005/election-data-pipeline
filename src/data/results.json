@@ -1,0 +1,55 @@
+{
+  "isPlaceholder": true,
+  "placeholderNotice": "All numerical values displayed below are illustrative placeholders designated for upcoming experimental runs. Real evaluation metrics will replace these upon completion of pipeline training benchmarks.",
+  "f1Comparison": [
+    {
+      "modelId": "P1",
+      "model": "P1 Baseline (IndicTrans2 + XGBoost)",
+      "targetF1": 0.75,
+      "currentF1": 0.732,
+      "status": "In Progress",
+      "precision": 0.741,
+      "recall": 0.724,
+      "isPlaceholder": true
+    },
+    {
+      "modelId": "P2",
+      "model": "P2 Multimodal (BLIP + BiLSTM Attention)",
+      "targetF1": 0.80,
+      "currentF1": 0.805,
+      "status": "Planned",
+      "precision": 0.812,
+      "recall": 0.798,
+      "isPlaceholder": true
+    },
+    {
+      "modelId": "P3",
+      "model": "P3 MuRIL Fine-Tuned (Core Contribution)",
+      "targetF1": 0.88,
+      "currentF1": 0.889,
+      "status": "Planned",
+      "precision": 0.893,
+      "recall": 0.885,
+      "isPlaceholder": true
+    }
+  ],
+  "perClassMetrics": [
+    { "class": "Pro-BJP", "precision": 0.88, "recall": 0.90, "f1Score": 0.89, "support": 450, "isPlaceholder": true },
+    { "class": "Anti-BJP", "precision": 0.86, "recall": 0.85, "f1Score": 0.85, "support": 420, "isPlaceholder": true },
+    { "class": "Pro-Congress", "precision": 0.87, "recall": 0.86, "f1Score": 0.86, "support": 390, "isPlaceholder": true },
+    { "class": "Anti-Congress", "precision": 0.84, "recall": 0.83, "f1Score": 0.83, "support": 380, "isPlaceholder": true },
+    { "class": "Pro-AAP", "precision": 0.85, "recall": 0.84, "f1Score": 0.84, "support": 250, "isPlaceholder": true },
+    { "class": "Anti-AAP", "precision": 0.82, "recall": 0.81, "f1Score": 0.81, "support": 240, "isPlaceholder": true },
+    { "class": "Pro-TMC", "precision": 0.84, "recall": 0.82, "f1Score": 0.83, "support": 220, "isPlaceholder": true },
+    { "class": "Anti-TMC", "precision": 0.81, "recall": 0.80, "f1Score": 0.80, "support": 210, "isPlaceholder": true },
+    { "class": "Neutral", "precision": 0.91, "recall": 0.92, "f1Score": 0.91, "support": 650, "isPlaceholder": true }
+  ],
+  "ablations": [
+    { "configuration": "Full P3 MuRIL Architecture", "macroF1": 0.889, "accuracy": 0.894, "isPlaceholder": true },
+    { "configuration": "Without Sarcasm Inversion Layer", "macroF1": 0.831, "accuracy": 0.838, "isPlaceholder": true },
+    { "configuration": "Without IndicTrans2 Normalization", "macroF1": 0.792, "accuracy": 0.799, "isPlaceholder": true },
+    { "configuration": "Without Domain-Specific Party Lexicons", "macroF1": 0.815, "accuracy": 0.821, "isPlaceholder": true },
+    { "configuration": "XLM-RoBERTa Direct (No Fine-Tuning)", "macroF1": 0.748, "accuracy": 0.753, "isPlaceholder": true },
+    { "configuration": "TF-IDF + Naive Bayes Baseline", "macroF1": 0.652, "accuracy": 0.660, "isPlaceholder": true }
+  ]
+}

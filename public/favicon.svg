@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#1e1b4b"/>
+  <path d="M16 6C12 6 9 10 9 16C9 22 12 26 16 26C20 26 23 22 23 16C23 10 20 6 16 6Z" fill="#312e81"/>
+  <!-- Election ink stain mark on finger tip motif -->
+  <path d="M16 8L16 18" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="16" cy="21" r="1.5" fill="#14b8a6"/>
+</svg>
